@@ -1,0 +1,20 @@
+{
+    "UserTypes":{
+        "chartHead":"User Types",
+        "labels":["Bayt", "Abdalrahman", "Programmer", "Accountant", "Engineer"],
+        "dataSetLabel":"Users",
+        "dataSet":[12, 4, 3, 5, 2],
+        "chartType":"Pie",
+        "width":600,
+        "height":800
+    },
+    "Sales":{
+        "chartHead":"Sales Benefits",
+        "labels": ["January", "February", "March", "April", "May","June", "July"],
+        "dataSetLabel":"Benefits",
+        "dataSet":[400, 900, 300, 523, 2000, 1800,3000],
+        "chartType":"Line",
+        "width":400,
+        "height":400
+    }
+}

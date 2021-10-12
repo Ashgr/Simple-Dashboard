@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import FinancialCards from './components/FinancialCards';
+import LinearCard from './components/LinearCard';
+import Navbar from './components/Navbar';
+import PieChartCard from './components/PieChartCard';
+import SalesChart from './components/SalesChart';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: 'block' }}>
+      <Navbar />
+      <div style={{ display: 'grid', gridTemplateColumns: '65% auto' }}>
+        <div style = {{display:'flex' , flexDirection:'column' ,justifyContent:'space-around', alignItems:'center'}}> 
+          <FinancialCards />
+          <SalesChart />
+        </div>
+        <div>
+          <LinearCard />
+          <PieChartCard />
+        </div>
+      </div>
     </div>
   );
 }
